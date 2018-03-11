@@ -1,8 +1,8 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="mycss/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -33,7 +33,10 @@
 
 <section class="sec1"></section>
 
-<section class="sec2"></section>
+<section class="register">
+
+</section>
+
 <section class="sec3"></section>
 
 
@@ -59,6 +62,7 @@
         <input type="text" id="email">
         <label for="message">Message:</label>
         <textarea name="message" id="message"></textarea>
+        <button class="button button5">Submit</button>
     </form>
 </section>
 </body>

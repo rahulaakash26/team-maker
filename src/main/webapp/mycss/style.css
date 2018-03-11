@@ -96,11 +96,11 @@ section.sec1 {
 .contact {
     padding: 20px;
     text-align: left;
+    font-family: 'Roboto', sans-serif;
 }
 
 .contact h2 {
     font-size: 2em;
-    font-family: 'Roboto', sans-serif;
     color: rgba(242, 93, 70, 1);
     margin-bottom: 20px;
 }
@@ -117,7 +117,7 @@ section.sec1 {
 
 .contact input, textarea {
     width: 100%;
-    padding: 15px;
+    padding: 10px;
     border: 2px solid;
 }
 
@@ -130,4 +130,28 @@ section.image2 {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.button {
+    width: 100px;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button5 {
+    margin-top: 20px;
+    background-color: white;
+    color: rgba(242, 93, 70, 1);
+    border: 2px solid rgba(242, 93, 70, 1);
+}
+
+.button5:hover {
+    background-color: rgba(242, 93, 70, 1);
+    color: white;
 }
