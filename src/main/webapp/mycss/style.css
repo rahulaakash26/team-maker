@@ -6,6 +6,8 @@ body {
     padding: 0;
     font-family: sans-serif;
 }
+
+/*navigation bar*/
 nav {
     position: fixed;
     top: 0;
@@ -42,7 +44,7 @@ nav.logo span {
 
 nav ul {
     float: right;
-    margin: -45px 0px;
+    margin: -45px 0;
     padding: 0;
     display: flex;
 }
@@ -67,6 +69,7 @@ nav ul li a.active, nav ul li a:hover {
     background: rgba(242, 93, 70, 1);
 }
 
+/*hero area image*/
 section.sec1 {
     width: 100%;
     height: 100%;
@@ -77,6 +80,7 @@ section.sec1 {
     background-attachment: fixed;
 }
 
+/*about section*/
 .about {
     padding: 20px;
     text-align: left;
@@ -93,6 +97,7 @@ section.sec1 {
     margin: 10px 0px;
 }
 
+/*contact section*/
 .contact {
     padding: 20px;
     text-align: left;
@@ -121,6 +126,7 @@ section.sec1 {
     border: 2px solid;
 }
 
+/*image between Register and Contact section*/
 section.image2 {
     width: 100%;
     opacity: 0.5;
@@ -132,6 +138,19 @@ section.image2 {
     background-attachment: fixed;
 }
 
+/*image between about and register section*/
+section.image3 {
+    width: 100%;
+    opacity: 0.5;
+    height: 400px;
+    background: url("/fistbump1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*submit button in contact section*/
 .button {
     width: 100px;
     padding: 8px 16px;
@@ -154,4 +173,67 @@ section.image2 {
 .button5:hover {
     background-color: rgba(242, 93, 70, 1);
     color: white;
+}
+
+/*register section*/
+.register{
+    display: flex;
+}
+
+/*register and login form*/
+.form-style-8{
+    width: 500px;
+    padding: 30px;
+    background: #FFFFFF;
+    margin-left: 120px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+
+}
+.form-style-8 h2{
+    background: rgba(56,54,67,1);
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    color: #797979;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 20px;
+    margin: -30px -30px 30px -30px;
+}
+.form-style-8 input[type="text"],
+.form-style-8 input[type="email"],
+.form-style-8 input[type="password"]
+{
+    box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    margin-bottom: 10px;
+    font: 16px Arial, Helvetica, sans-serif;
+    height: 45px;
+}
+
+.form-style-8 input[type="submit"]{
+    box-shadow: inset 0px 1px 0px 0px #45D6D6;
+    background-color: #2CBBBB;
+    border: 1px solid #27A0A0;
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 8px 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.form-style-8 input[type="submit"]:hover {
+    background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
+    background-color:#34CACA;
 }
