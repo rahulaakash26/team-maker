@@ -18,6 +18,7 @@
 </head>
 
 <body>
+<%--navbar--%>
 <nav>
     <div class="container">
         <div class="logo"><span>TEAM-MAKER</span></div>
@@ -31,15 +32,10 @@
     </div>
 </nav>
 
+<%--Hero Image section--%>
 <section class="sec1"></section>
 
-<section class="register">
-
-</section>
-
-<section class="sec3"></section>
-
-
+<%--About Section--%>
 <section class="about container">
     <h2>About</h2>
     <p>Team-Maker is a place to build projects with people like you.
@@ -51,8 +47,36 @@
         their projects, and collaborate.</p>
 </section>
 
+<%--Parallax image btw about and register section--%>
+<section class="image3"></section>
+
+<%--Register section--%>
+<section class="register">
+    <div class="form-style-8">
+        <h2>Register for Team-Maker</h2>
+        <form>
+            <input type="text" name="field1" placeholder="Full Name" />
+            <input type="email" name="field2" placeholder="Email" />
+            <input type="password" name="field3" placeholder="Password" />
+            <input type="password" name="field3" placeholder="Retype Password" />
+            <input type="submit" value="Register" />
+        </form>
+    </div>
+
+    <div class="form-style-8">
+        <h2>Login into your account</h2>
+        <form>
+            <input type="email" name="field2" placeholder="Email" />
+            <input type="password" name="field3" placeholder="Password" />
+            <input type="submit" value="Login" />
+        </form>
+    </div>
+</section>
+
+<%--Image between Register and Contact section--%>
 <section class="image2"></section>
 
+<%--Contact Section--%>
 <section class="contact container">
     <h2>Contact Us</h2>
     <form action="">
