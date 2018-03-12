@@ -18,7 +18,7 @@
 </head>
 
 <body>
-<%--navbar--%>
+<%--navbar in the page--%>
 <nav>
     <div class="container">
         <div class="logo"><span>TEAM-MAKER</span></div>
