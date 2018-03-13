@@ -63,11 +63,18 @@ nav ul li a {
     transition: .5s;
 }
 
-nav ul li a.active, nav ul li a:hover {
+/*nav ul li a.active, nav ul li a:hover {*/
+    /*text-decoration: none;*/
+    /*color: #fff;*/
+    /*background: rgba(242, 93, 70, 1);*/
+/*}*/
+
+.active, nav ul li a:hover {
     text-decoration: none;
     color: #fff;
     background: rgba(242, 93, 70, 1);
 }
+
 
 /*hero area image*/
 section.sec1 {
