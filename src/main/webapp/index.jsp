@@ -51,31 +51,6 @@
 <%--Parallax image btw about and register section--%>
 <section class="image3"></section>
 
-<%--Register section--%>
-<section class="register" id="register">
-    <div class="form-style-8">
-        <h2>Register for Team-Maker</h2>
-        <form>
-            <input type="text" name="field1" placeholder="Full Name" />
-            <input type="email" name="field2" placeholder="Email" />
-            <input type="password" name="field3" placeholder="Password" />
-            <input type="password" name="field3" placeholder="Retype Password" />
-            <input type="submit" value="Register" />
-        </form>
-    </div>
-
-    <div class="form-style-8">
-        <h2>Login into your account</h2>
-        <form>
-            <input type="email" name="field2" placeholder="Email" />
-            <input type="password" name="field3" placeholder="Password" />
-            <input type="submit" value="Login" />
-        </form>
-    </div>
-</section>
-
-<%--Image between Register and Contact section--%>
-<section class="image2"></section>
 
 <%--Contact Section--%>
 <section class="contact container" id="contact">
