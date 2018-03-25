@@ -61,6 +61,7 @@ nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
     transition: .5s;
+    font-size: medium;
 }
 
 .active, nav ul li a:hover {
@@ -169,9 +170,24 @@ section.image3 {
     background-color: white;
     color: rgba(242, 93, 70, 1);
     border: 2px solid rgba(242, 93, 70, 1);
+    padding: 10px;
 }
 
 .button5:hover {
-    background-color: rgba(242, 93, 70, 1);
+    background: linear-gradient(to right, #B24592, #F15F79);
     color: white;
+}
+
+.modal {
+    background: linear-gradient(to right, #B24592, #F15F79);
+}
+
+.modal-dialog{
+    vertical-align: middle;
+}
+
+.modal-content  {
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;
 }

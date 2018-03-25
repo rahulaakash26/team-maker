@@ -2,10 +2,10 @@
 
 <head>
     <link rel="stylesheet" href="mycss/style.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
     <script src="myjs/myscript.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script type="text/javascript">
         $(window).on('scroll', function () {
@@ -27,7 +27,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#">People</a></li>
-            <li><a href="#register">Register</a></li>
+            <li><a href="#register" data-toggle="modal" data-target="#myModal">Register</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
@@ -51,6 +51,42 @@
 <%--Parallax image btw about and register section--%>
 <section class="image3"></section>
 
+<%--Register Modal>--%>
+<div class="container">
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Register here to begin</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="post" class="register-form">
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Confirm Password:</label>
+                            <input type="password" class="form-control" id="cnf_pwd" placeholder="Re-enter password" name="cnf_pwd">
+                        </div>
+
+                        <button type="submit" class="button5">Register as new User</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
 
 <%--Contact Section--%>
 <section class="contact container" id="contact">
@@ -59,11 +95,12 @@
         <label for="name">Name:</label>
         <input type="text" id="name">
         <label for="email">Email:</label>
-        <input type="text" id="email">
+        <input type="text" id="contact_email">
         <label for="message">Message:</label>
         <textarea name="message" id="message"></textarea>
         <button class="button button5">Submit</button>
     </form>
 </section>
 </body>
+</html>
 </html>
