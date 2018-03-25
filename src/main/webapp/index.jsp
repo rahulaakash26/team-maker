@@ -36,6 +36,9 @@
 <%--Hero Image section--%>
 <section class="sec1" id="home"></section>
 
+<%--Register Modal--%>
+
+
 <%--About Section--%>
 <section class="about container" id="about">
     <h2>About</h2>
@@ -48,34 +51,8 @@
         their projects, and collaborate.</p>
 </section>
 
-<%--Parallax image btw about and register section--%>
+<%--Parallax image btw about and  section--%>
 <section class="image3"></section>
-
-<%--Register section--%>
-<section class="register" id="register">
-    <div class="form-style-8">
-        <h2>Register for Team-Maker</h2>
-        <form>
-            <input type="text" name="field1" placeholder="Full Name" />
-            <input type="email" name="field2" placeholder="Email" />
-            <input type="password" name="field3" placeholder="Password" />
-            <input type="password" name="field3" placeholder="Retype Password" />
-            <input type="submit" value="Register" />
-        </form>
-    </div>
-
-    <div class="form-style-8">
-        <h2>Login into your account</h2>
-        <form>
-            <input type="email" name="field2" placeholder="Email" />
-            <input type="password" name="field3" placeholder="Password" />
-            <input type="submit" value="Login" />
-        </form>
-    </div>
-</section>
-
-<%--Image between Register and Contact section--%>
-<section class="image2"></section>
 
 <%--Contact Section--%>
 <section class="contact container" id="contact">
@@ -92,3 +69,80 @@
 </section>
 </body>
 </html>
+</html>
+
+<head>
+    <link rel="stylesheet" href="mycss/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="myjs/myscript.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black')
+            } else {
+                $('nav').removeClass('black')
+            }
+        });
+    </script>
+</head>
+
+<body>
+<%--navbar--%>
+<nav>
+    <div class="container">
+        <div class="logo"><span>TEAM-MAKER</span></div>
+        <ul class="mainNav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<%--Hero Image section--%>
+<section class="sec1" id="home"></section>
+
+<%--Register Modal></html>
+
+<head>
+    <link rel="stylesheet" href="mycss/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="myjs/myscript.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black')
+            } else {
+                $('nav').removeClass('black')
+            }
+        });
+    </script>
+</head>
+
+<body>
+<%--navbar--%>
+<nav>
+    <div class="container">
+        <div class="logo"><span>TEAM-MAKER</span></div>
+        <ul class="mainNav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<%--Hero Image section--%>
+<section class="sec1" id="home"></section>
+
+<%--Register M>
