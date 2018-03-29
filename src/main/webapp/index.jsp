@@ -71,7 +71,7 @@
                     <h4 class="modal-title">Register here to begin</h4>
                 </div>
                 <div class="modal-body">
-                    <form action="post" class="register-form">
+                    <form action="/registration" class="register-form" method="post">
                         <div class="form-group">
                             <label for="email">Email:</label>
                             <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
@@ -109,7 +109,7 @@
                     <h4 class="modal-title">Enter your login details</h4>
                 </div>
                 <div class="modal-body">
-                    <form action="post" class="register-form">
+                    <form method="post" action="/registration" class="register-form">
                         <div class="form-group">
                             <label for="email">Email:</label>
                             <input type="email" class="form-control" id="login-email" placeholder="Enter email" name="email">
