@@ -26,8 +26,8 @@
         <ul class="mainNav">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#">People</a></li>
             <li><a href="#register" data-toggle="modal" data-target="#myModal">Register</a></li>
+            <li><a href="#login" data-toggle="modal" data-target="#loginModal">Login</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
@@ -46,6 +46,13 @@
         everything in between.</p>
     <p>Team-Maker: where people interested in the same topic, issue, company or technology can meet one another, share
         their projects, and collaborate.</p>
+
+    <div class="row">
+        <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+        <div class="col-sm-4" style="background-color:lavenderblush;">.col-sm-4</div>
+        <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+    </div>
+
 </section>
 
 <%--Parallax image btw about and register section--%>
@@ -79,6 +86,40 @@
                         </div>
 
                         <button type="submit" class="button5">Register as new User</button>
+                        <a href="#" class="button5" data-toggle="modal" data-target="#loginModal">Already have an account</a>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<%--Login Modal>--%>
+<div class="container">
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Enter your login details</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="post" class="register-form">
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="login-email" placeholder="Enter email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" id="login-pwd" placeholder="Enter password" name="pwd">
+                        </div>
+                        <button type="submit" class="button5">LOGIN</button>
+                        <a href="#" class="button5">Forgot Password</a>
                     </form>
                 </div>
             </div>

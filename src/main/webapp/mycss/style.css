@@ -7,6 +7,10 @@ body {
     font-family: sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 /*navigation bar*/
 nav {
     position: fixed;
@@ -178,12 +182,12 @@ section.image3 {
     color: white;
 }
 
-.modal {
-    background: linear-gradient(to right, #B24592, #F15F79);
+#myModal {
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
 }
 
-.modal-dialog{
-    vertical-align: middle;
+#loginModal{
+    background: linear-gradient(to right, #00467F, #A5CC82);
 }
 
 .modal-content  {
