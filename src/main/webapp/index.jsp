@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <%--<script src="https://code.jquery.com/jquery-3.3.1.js"></script>--%>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
     <script type="text/javascript">
         $(window).on('scroll', function () {
             if ($(window).scrollTop()) {
@@ -60,10 +63,21 @@
     <p>Team-Maker: where people interested in the same topic, issue, company or technology can meet one another, share
         their projects, and collaborate.</p>
 
-    <div class="row">
-        <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
-        <div class="col-sm-4" style="background-color:lavenderblush;">.col-sm-4</div>
-        <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"><i class="material-icons" style="font-size: 100px;">account_circle</i>
+                <h2>Register</h2>
+                <p class="text-center">Register with team-maker using just your name and email.</p>
+            </div>
+            <div class="col-md-4"><i class="material-icons" style="font-size: 100px;">search</i>
+                <h2>Search</h2>
+                <p class="text-center">Search for the ideal team partner for your project using our services.</p>
+            </div>
+            <div class="col-md-4"><i class="material-icons" style="font-size: 100px;">work</i>
+                <h2>Work</h2>
+                <p class="text-center">Start working on all the great things you&#39;ve been planning to do.</p>
+            </div>
+        </div>
     </div>
 
 </section>

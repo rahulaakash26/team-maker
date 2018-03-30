@@ -103,6 +103,11 @@ section.sec1 {
     margin: 10px 0px;
 }
 
+.about .row{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 /*contact section*/
 .contact {
     padding: 20px;
@@ -199,4 +204,19 @@ section.image3 {
 .error {
     color: red;
     font-size: 12px;
+}
+
+.col-md-4{
+    text-align: center;
+    border-style: solid;
+    border-width: 0px 1px 0px 1px;
+    border-color: rgb(56,54,67);
+}
+
+.col-md-4 h2{
+    color: rgb(56,54,67);
+}
+
+.material-icons{
+    color: rgb(242, 93, 70);
 }
