@@ -195,3 +195,8 @@ section.image3 {
     -moz-border-radius: 0px !important;
     border-radius: 0px !important;
 }
+
+.error {
+    color: red;
+    font-size: 12px;
+}

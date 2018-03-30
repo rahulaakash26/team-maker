@@ -1,12 +1,25 @@
 <html>
 
 <head>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/additional-methods.js"></script>
+
     <link rel="stylesheet" href="mycss/style.css">
     <script src="myjs/myscript.js"></script>
+    <script src="myjs/Validations.js"></script>
+
+  <%--  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+--%>
+
+    <%--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>--%>
+
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <%--<script src="https://code.jquery.com/jquery-3.3.1.js"></script>--%>
     <script type="text/javascript">
         $(window).on('scroll', function () {
             if ($(window).scrollTop()) {
@@ -71,21 +84,25 @@
                     <h4 class="modal-title">Register here to begin</h4>
                 </div>
                 <div class="modal-body">
-                    <form action="/registration" class="register-form" method="post">
+                    <form id="register-form" action="/registration" class="register-form" method="post">
+                        <div class="form-group">
+                            <label for="name">Full Name:</label>
+                            <input type="text" class="form-control error" id="name" placeholder="Enter your full name" name="name" required>
+                        </div>
                         <div class="form-group">
                             <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                            <input type="email" class="form-control error" id="email" placeholder="Enter email" name="email" required>
                         </div>
                         <div class="form-group">
                             <label for="pwd">Password:</label>
-                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                            <input type="password" class="form-control error" id="pwd" placeholder="Enter password" name="pwd" required>
                         </div>
                         <div class="form-group">
                             <label for="pwd">Confirm Password:</label>
-                            <input type="password" class="form-control" id="cnf_pwd" placeholder="Re-enter password" name="cnf_pwd">
+                            <input type="password" class="form-control error" id="cnf_pwd" placeholder="Re-enter password" name="cnf_pwd" required>
                         </div>
 
-                        <button type="submit" class="button5">Register as new User</button>
+                        <input type="submit" class="button5" id="register-btn" value="Register as new user">
                         <a href="#" class="button5" data-toggle="modal" data-target="#loginModal">Already have an account</a>
                     </form>
                 </div>
@@ -134,7 +151,7 @@
     <h2>Contact Us</h2>
     <form action="">
         <label for="name">Name:</label>
-        <input type="text" id="name">
+        <input type="text" id="contact_name">
         <label for="email">Email:</label>
         <input type="text" id="contact_email">
         <label for="message">Message:</label>
