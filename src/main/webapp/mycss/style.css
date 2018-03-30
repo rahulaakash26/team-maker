@@ -108,6 +108,21 @@ section.sec1 {
     margin-bottom: 50px;
 }
 
+.col-md-4{
+    text-align: center;
+    border-style: solid;
+    border-width: 0px 1px 0px 1px;
+    border-color: rgb(56,54,67);
+}
+
+.col-md-4 h2{
+    color: rgb(56,54,67);
+}
+
+.material-icons{
+    color: rgb(242, 93, 70);
+}
+
 /*contact section*/
 .contact {
     padding: 20px;
@@ -187,6 +202,7 @@ section.image3 {
     color: white;
 }
 
+/*Register Modal and Login Modal*/
 #myModal {
     background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
 }
@@ -204,19 +220,4 @@ section.image3 {
 .error {
     color: red;
     font-size: 12px;
-}
-
-.col-md-4{
-    text-align: center;
-    border-style: solid;
-    border-width: 0px 1px 0px 1px;
-    border-color: rgb(56,54,67);
-}
-
-.col-md-4 h2{
-    color: rgb(56,54,67);
-}
-
-.material-icons{
-    color: rgb(242, 93, 70);
 }

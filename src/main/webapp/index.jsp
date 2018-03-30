@@ -2,27 +2,24 @@
 
 <head>
 
+    <%--jquery cdn for form validations--%>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/additional-methods.js"></script>
 
+    <%--stylesheet and js for bootstrap--%>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <%--stylesheet to use google material icons--%>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <%--additional stylesheets and js files for user defined actions--%>
     <link rel="stylesheet" href="mycss/style.css">
     <script src="myjs/myscript.js"></script>
     <script src="myjs/Validations.js"></script>
 
-  <%--  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
---%>
-
-    <%--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>--%>
-
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <%--<script src="https://code.jquery.com/jquery-3.3.1.js"></script>--%>
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+    <%--code to make navbar black on scroll--%>
     <script type="text/javascript">
         $(window).on('scroll', function () {
             if ($(window).scrollTop()) {
@@ -62,7 +59,6 @@
         everything in between.</p>
     <p>Team-Maker: where people interested in the same topic, issue, company or technology can meet one another, share
         their projects, and collaborate.</p>
-
     <div class="container">
         <div class="row">
             <div class="col-md-4"><i class="material-icons" style="font-size: 100px;">account_circle</i>
@@ -79,10 +75,9 @@
             </div>
         </div>
     </div>
-
 </section>
 
-<%--Parallax image btw about and register section--%>
+<%--Parallax image btw about and contact section--%>
 <section class="image3"></section>
 
 <%--Register Modal>--%>
