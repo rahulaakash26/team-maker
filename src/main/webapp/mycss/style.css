@@ -121,6 +121,11 @@ section.sec1 {
 
 .material-icons{
     color: rgb(242, 93, 70);
+    transition: 1s;
+}
+
+.material-icons:hover{
+    transform: rotate(360deg);
 }
 
 /*contact section*/
@@ -221,3 +226,40 @@ section.image3 {
     color: red;
     font-size: 12px;
 }
+
+/*footer*/
+.footer-basic{
+    height: 15%;
+    background-color: rgb(56,54,67);
+    vertical-align: middle;
+    color: white;
+}
+
+.footer-logo{
+    position: absolute;
+    font-family: 'Righteous', cursive;
+    margin-top: 20px;
+    margin-left: 100px;
+    font-size: 35px;
+    color : rgba(242, 93, 70, 1);
+}
+
+.social{
+    float: right;
+    font-size: 40px;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.social a {
+    margin-right: 30px;
+}
+
+.social a i{
+    color: white;
+}
+
+.copyright{
+    margin-left: 45%;
+}
+
