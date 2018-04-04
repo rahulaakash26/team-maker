@@ -16,7 +16,7 @@ public class Registeration extends javax.servlet.http.HttpServlet {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/teamfinder", "root", "");
-            PreparedStatement pr = con.prepareStatement("insert into register (name, email, password) VALUES('" + name + "','" + email + "','" + password + "') ");
+            PreparedStatement pr = con.prepareStatement("insert into register1 (name, email, password) VALUES('" + name + "','" + email + "','" + password + "') ");
             pr.executeUpdate();
             PrintWriter writer = response.getWriter();
             RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");

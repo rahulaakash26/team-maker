@@ -33,6 +33,9 @@
 </head>
 
 <body>
+<%
+    if (session.getAttribute("login_session") == null) {
+%>
 <%--navbar--%>
 <nav>
     <div class="container">
@@ -46,7 +49,34 @@
         </ul>
     </div>
 </nav>
-
+<%
+    }else{
+        String name = (String) session.getAttribute("login_session");
+%>
+<%--Navbar when user is logged in--%>
+<nav>
+    <div class="container">
+        <div class="logo"><span>TEAM-MAKER</span></div>
+        <ul class="mainNav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Upload</a></li>
+            <li><a href="#">Find</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <%=name%><span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="logout.jsp">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+<%
+    }
+%>
 <%--Hero Image section--%>
 <section class="sec1" id="home"></section>
 
@@ -136,16 +166,16 @@
                     <h4 class="modal-title">Enter your login details</h4>
                 </div>
                 <div class="modal-body">
-                    <form method="post" action="/registration" class="register-form">
+                    <form method="post" action="/login" class="register-form">
                         <div class="form-group">
                             <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="login-email" placeholder="Enter email" name="email">
+                            <input type="email" class="form-control" id="login-email" placeholder="Enter email" name="login_email" required>
                         </div>
                         <div class="form-group">
                             <label for="pwd">Password:</label>
-                            <input type="password" class="form-control" id="login-pwd" placeholder="Enter password" name="pwd">
+                            <input type="password" class="form-control" id="login-pwd" placeholder="Enter password" name="login_pwd" required>
                         </div>
-                        <button type="submit" class="button5">LOGIN</button>
+                        <input type="submit" class="button5" value="LOGIN"/>
                         <a href="#" class="button5">Forgot Password</a>
                     </form>
                 </div>

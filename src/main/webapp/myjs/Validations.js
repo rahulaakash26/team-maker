@@ -20,7 +20,7 @@ $(function () {
             email: {
                 // Specify that email should be validated
                 // by the built-in "email" rule
-                email: true
+                email: true,
             },
             pwd: {
                 minlength: 5,
@@ -40,7 +40,9 @@ $(function () {
                 minlength: "Your password must be at least 5 characters long",
                 maxlength: "Your password must be at most 15 characters long"
             },
-            email: "Please enter a valid email address",
+            email: {
+                email: "Please enter a valid email address"
+            },
             cnf_pwd: "Password do not match"
         },
         // Make sure the form is submitted to the destination defined
