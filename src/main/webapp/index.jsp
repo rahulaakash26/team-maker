@@ -39,6 +39,7 @@
 <%--navbar--%>
 <nav>
     <div class="container">
+        <img src="team_logo.png" alt="LOGO" width="50" height="50">
         <div class="logo"><span>TEAM-MAKER</span></div>
         <ul class="mainNav">
             <li><a href="#home">Home</a></li>
@@ -209,6 +210,7 @@
         <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
 
         <p class="copyright">&copy; 2018 All Rights Reserved.</p>
+        <img src="team_logo.png" alt="LOGO" width="60" height="60">
     </footer>
 </div>
 

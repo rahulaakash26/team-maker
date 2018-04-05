@@ -25,6 +25,12 @@ nav {
     z-index: 1;
 }
 
+nav img{
+    position: absolute;
+    margin-left: -55px;
+    margin-top: -2px;
+}
+
 nav.logo {
     float: left;
 }
@@ -242,6 +248,11 @@ section.image3 {
     margin-left: 100px;
     font-size: 35px;
     color : rgba(242, 93, 70, 1);
+}
+
+footer img {
+    position: absolute;
+    margin-left: 670px;
 }
 
 .social{

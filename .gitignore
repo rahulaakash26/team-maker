@@ -113,7 +113,10 @@ hs_err_pid*
 .idea
 *.iml
 *.jpg
+*.png
 js/
 css/
 *.json
 web.xml
+lib/
+src/main/resources/
