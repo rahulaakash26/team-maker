@@ -32,7 +32,7 @@
             if ($(window).scrollTop()) {
                 $('nav').addClass('black')
             } else {
-                $('nav').removeClass('black')
+                $('nav').addClass('black')
             }
         });
     </script>
