@@ -121,6 +121,10 @@ section.sec1 {
     border-color: rgb(56,54,67);
 }
 
+.col-md-3 {
+    text-align: center;
+}
+
 .col-md-4 h2{
     color: rgb(56,54,67);
 }
