@@ -209,13 +209,13 @@ section.image3 {
 }
 
 .button5:hover {
-    background: linear-gradient(to right, #B24592, #F15F79);
+    background: rgb(242, 93, 70);
     color: white;
 }
 
 /*Register Modal and Login Modal*/
 #myModal {
-    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    background: linear-gradient(to right, #44A08D, #093637);
 }
 
 #loginModal{

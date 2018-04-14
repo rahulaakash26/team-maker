@@ -26,8 +26,10 @@ public class Registeration extends javax.servlet.http.HttpServlet {
             e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
+            response.sendRedirect("index.jsp");
         } catch (Exception e) {
             e.printStackTrace();
+            response.sendRedirect("index.jsp");
         }
     }
 
