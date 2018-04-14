@@ -1,7 +1,7 @@
 <html>
 
 <head>
-
+    <title>Welcome to Team-maker</title>
     <%--jquery cdn for form validations--%>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.js"></script>
@@ -17,7 +17,6 @@
 
     <%--additional stylesheets and js files for user defined actions--%>
     <link rel="stylesheet" href="mycss/style.css">
-    <script src="myjs/myscript.js"></script>
     <script src="myjs/Validations.js"></script>
 
     <%--code to make navbar black on scroll--%>
@@ -57,11 +56,12 @@
 <%--Navbar when user is logged in--%>
 <nav>
     <div class="container">
+        <img src="team_logo.png" alt="LOGO" width="50" height="50">
         <div class="logo"><span>TEAM-MAKER</span></div>
         <ul class="mainNav">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#">Upload</a></li>
+            <li><a href="upload.jsp">Upload</a></li>
             <li><a href="#">Find</a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
