@@ -47,6 +47,34 @@
             margin-bottom: 40px;
         }
     </style>
+
+    <script type="text/javascript">
+        function addFields() {
+            var number = document.getElementById("team-members").value;
+            var container = document.getElementById("member_area");
+            while (container.hasChildNodes()) {
+                container.removeChild(container.lastChild);
+            }
+            for (i=0;i<number;i++){
+                var textnode = document.createTextNode("Member " + (i+1) + " for :");
+                var span = document.createElement('span');
+                span.id = "span1";
+                span.appendChild(textnode);
+                container.appendChild(span);
+
+                var input = document.createElement("input");
+                input.type = "text";
+                input.name = "member" + i;
+                input.className = "form-control";
+                input.id = "member" + i;
+                input.placeholder = "Eg: front-end development";
+                input.required = true;
+                container.appendChild(input);
+                container.appendChild(document.createElement("br"));
+            }
+        }
+    </script>
+
 </head>
 <body>
 <%
@@ -95,13 +123,23 @@
                     <label for="skills_required">Two most important programming languages the member should know?</label>
                     <input type="text" id="skills_required" class="form-control error" placeholder="Example java, python" required>
                 </div>
+
                 <div class="form-group">
                     <label for="framework">Which software frameworks do you prefer to use?<small>(optional)</small></label>
                     <input type="text" id="framework" class="form-control error" placeholder="Example Hibernate, django">
                 </div>
+
                 <div class="form-group">
                     <label for="team-members">How many team members do you need for this project?</label>
-                    <input type="text" class="form-control error" id="team-members" placeholder="Number of team members" required>
+                    <div class="row">
+                        <div class="col-md-9">
+                            <input type="text" class="form-control error" id="team-members" placeholder="Number of team members" required>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="#" id="add_members" class="btn btn-danger" onclick="addFields()">Add Member Description</a>
+                        </div>
+                    </div>
+                    <div id="member_area"></div>
                 </div>
                 
                 <div class="form-group">
