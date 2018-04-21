@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.*;
 
 public class DescUpload extends HttpServlet {
@@ -29,7 +30,7 @@ public class DescUpload extends HttpServlet {
         String session_email = (String) session.getAttribute("login_email");
 
         int i = 0;
-
+        PrintWriter out = response.getWriter();
         try{
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/teamfinder", "root", "");
@@ -43,12 +44,16 @@ public class DescUpload extends HttpServlet {
             PreparedStatement pr2 = con.prepareStatement("insert into desctable (user_id, desc_sum, lang, framework, team_member, team_desc, lifecycle, time_period) values ('" + mUserID + "', '" + mDescSum + "', '" + mLang + "', '" + mFramework + "', '" + mTeamMember + "', '" + mTeamDesc + "', '" + mLifecycle + "', '" + mTimePeriod + "')");
             pr2.executeUpdate();
             RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
+            out.print("<script>alert('Description has been successfully posted');</script>");
             dispatcher.include(request, response);
-
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
+            out.print("<script>alert('Something Went Wrong');</script>");
+            response.sendRedirect("upload.jsp");
         } catch (SQLException e) {
             e.printStackTrace();
+            out.print("<script>alert('Something Went Wrong');</script>");
+            response.sendRedirect("upload.jsp");
         }
     }
 

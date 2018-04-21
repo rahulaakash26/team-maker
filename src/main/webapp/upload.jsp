@@ -20,8 +20,9 @@
 
     <%--stylesheet to use google material icons--%>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
-    <%--additional stylesheets and js files for user defined actions--%>
+<%--additional stylesheets and js files for user defined actions--%>
     <link rel="stylesheet" href="mycss/style.css">
 
     <style>
@@ -141,7 +142,7 @@
                     </div>
                     <div id="member_area"></div>
                 </div>
-                
+
                 <div class="form-group">
                     <label>Where are you in the lifecycle of this project?</label>
                     <div class="row">
@@ -198,6 +199,20 @@
             </form>
         </div>
     </div>
+</div>
+
+
+<%--footer--%>
+<div class="footer-basic">
+    <footer>
+
+        <div class="footer-logo">TEAM-MAKER</div>
+
+        <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+
+        <p class="copyright">&copy; 2018 All Rights Reserved.</p>
+        <img src="team_logo.png" alt="LOGO" width="60" height="60">
+    </footer>
 </div>
 
 </body>

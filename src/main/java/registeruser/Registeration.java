@@ -12,24 +12,25 @@ public class Registeration extends javax.servlet.http.HttpServlet {
         name = request.getParameter("name");
         email = request.getParameter("email");
         password = request.getParameter("pwd");
+        PrintWriter writer = response.getWriter();
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/teamfinder", "root", "");
             PreparedStatement pr = con.prepareStatement("insert into register1 (name, email, password) VALUES('" + name + "','" + email + "','" + password + "') ");
             pr.executeUpdate();
-            PrintWriter writer = response.getWriter();
             RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
-            writer.println("<h1>Success</h1>");
             dispatcher.include(request, response);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
             response.sendRedirect("index.jsp");
+            writer.print("<script>alert('Something Went Wrong');</script>");
         } catch (Exception e) {
             e.printStackTrace();
             response.sendRedirect("index.jsp");
+            writer.print("<script>alert('Something Went Wrong');</script>");
         }
     }
 
