@@ -1,5 +1,6 @@
 package descupload;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -38,7 +39,12 @@ public class DescUpload extends HttpServlet {
                 i++;
                 mUserID = rs.getString(1);
             }
-            System.out.println(mUserID);
+
+            PreparedStatement pr2 = con.prepareStatement("insert into desctable (user_id, desc_sum, lang, framework, team_member, team_desc, lifecycle, time_period) values ('" + mUserID + "', '" + mDescSum + "', '" + mLang + "', '" + mFramework + "', '" + mTeamMember + "', '" + mTeamDesc + "', '" + mLifecycle + "', '" + mTimePeriod + "')");
+            pr2.executeUpdate();
+            RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
+            dispatcher.include(request, response);
+
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
