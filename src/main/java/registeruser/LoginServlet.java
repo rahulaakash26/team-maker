@@ -27,6 +27,7 @@ public class LoginServlet extends HttpServlet {
                 String name = rs.getString("name");
                 HttpSession session = request.getSession();
                 session.setAttribute("login_session", name);
+                session.setAttribute("login_email", email);
                 i++;
                 response.sendRedirect("index.jsp");
             }
