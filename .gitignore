@@ -112,8 +112,6 @@ hs_err_pid*
 
 .idea
 *.iml
-*.jpg
-*.png
 js/
 css/
 *.json
