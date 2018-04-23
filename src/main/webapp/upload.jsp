@@ -122,12 +122,12 @@
                 </div>
                 <div class="form-group">
                     <label for="skills_required">Two most important programming languages the member should know?</label>
-                    <input type="text" id="skills_required" name="skills_required" class="form-control error" placeholder="Example java, python" required>
+                    <input type="text" id="skills_required" name="skills_required" class="form-control" placeholder="Example java, python" required>
                 </div>
 
                 <div class="form-group">
                     <label for="framework">Which software frameworks do you prefer to use?<small>(optional)</small></label>
-                    <input type="text" id="framework" name="framework" class="form-control error" placeholder="Example Hibernate, django">
+                    <input type="text" id="framework" name="framework" class="form-control" placeholder="Example Hibernate, django">
                 </div>
 
                 <div class="form-group">

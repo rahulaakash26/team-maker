@@ -48,12 +48,12 @@ public class DescUpload extends HttpServlet {
             dispatcher.include(request, response);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
-            out.print("<script>alert('Something Went Wrong');</script>");
             response.sendRedirect("upload.jsp");
+            out.print("<script>alert('Something Went Wrong');</script>");
         } catch (SQLException e) {
             e.printStackTrace();
-            out.print("<script>alert('Something Went Wrong');</script>");
             response.sendRedirect("upload.jsp");
+            out.print("<script>alert('Something Went Wrong');</script>");
         }
     }
 

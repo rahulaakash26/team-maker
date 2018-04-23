@@ -108,6 +108,7 @@
 %>
 <div class="container">
     <h2>Find</h2>
+    <input type="hidden" name="">
     <%
     try {
         Class.forName("com.mysql.jdbc.Driver");
@@ -168,7 +169,7 @@
                 </div>
 
                 <%--Panel Footer--%>
-                <div class="panel-footer"><b>Uploaded By : </b><%=uploadedBy%>(<%=uploaderEmail%>)</div>
+                <div class="panel-footer"><b>Contact : </b><%=uploadedBy%>(<%=uploaderEmail%>)</div>
                 </div>
             </div>
         </div>
