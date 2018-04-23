@@ -25,9 +25,11 @@ public class LoginServlet extends HttpServlet {
             PrintWriter writer = response.getWriter();
             while (rs.next()) {
                 String name = rs.getString("name");
+                int registerID = rs.getInt(1);
                 HttpSession session = request.getSession();
                 session.setAttribute("login_session", name);
                 session.setAttribute("login_email", email);
+                session.setAttribute("login_id", registerID);
                 i++;
                 response.sendRedirect("index.jsp");
             }

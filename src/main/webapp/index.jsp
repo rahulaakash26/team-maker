@@ -68,7 +68,7 @@
                     <%=name%><span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Profile</a></li>
+                    <li><a href="profile.jsp">Profile</a></li>
                     <li><a href="logout.jsp">Logout</a></li>
                 </ul>
             </li>
