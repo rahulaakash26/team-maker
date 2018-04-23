@@ -92,8 +92,8 @@
         <ul class="mainNav">
             <li><a href="index.jsp">Home</a></li>
             <li><a href="/index.jsp#about">About</a></li>
-            <li><a href="#">Upload</a></li>
-            <li><a href="#">Find</a></li>
+            <li><a href="upload.jsp">Upload</a></li>
+            <li><a href="find.jsp">Find</a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                     <%=name%><span class="caret"></span>
@@ -160,24 +160,6 @@
                         </div>
                     </div>
                 </div>
-
-                <%--<div class="form-group">--%>
-                    <%--<input type="hidden" id="time_hidden">--%>
-                    <%--<label for="time_period">How long do you expect this project to last?</label>--%>
-                    <%--<div class="btn-group">--%>
-                        <%--<button class="btn dropdown-toggle" data-toggle="dropdown" id="time_period">--%>
-                            <%--Time Period--%>
-                            <%--<span class="caret"></span>--%>
-                        <%--</button>--%>
-                        <%--<ul class="dropdown-menu">--%>
-                            <%--<li onclick="$('#time_hidden').val('More than 6 months'); $('#upload_form').submit()">More than 6 months</li>--%>
-                            <%--<li onclick="$('#time_hidden').val('3-6 months'); $('#upload_form').submit()">3-6 Months</li>--%>
-                            <%--<li onclick="$('#time_hidden').val('1-3 months'); $('#upload_form').submit()">1-3 Months</li>--%>
-                            <%--<li onclick="$('#time_hidden').val('less than 1 month'); $('#upload_form').submit()">Less than 1 month</li>--%>
-                            <%--<li onclick="$('#time_hidden').val('Around 1 week'); $('#upload_form').submit()">Around 1 week</li>--%>
-                        <%--</ul>--%>
-                    <%--</div>--%>
-                <%--</div>--%>
 
                 <div class="form-group">
                     <div class="row">

@@ -43,7 +43,7 @@ public class DescUpload extends HttpServlet {
 
             PreparedStatement pr2 = con.prepareStatement("insert into desctable (user_id, desc_sum, lang, framework, team_member, team_desc, lifecycle, time_period) values ('" + mUserID + "', '" + mDescSum + "', '" + mLang + "', '" + mFramework + "', '" + mTeamMember + "', '" + mTeamDesc + "', '" + mLifecycle + "', '" + mTimePeriod + "')");
             pr2.executeUpdate();
-            RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("find.jsp");
             out.print("<script>alert('Description has been successfully posted');</script>");
             dispatcher.include(request, response);
         } catch (ClassNotFoundException e) {
